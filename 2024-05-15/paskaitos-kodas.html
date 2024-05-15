@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024-05-15</title>
+    <style>
+        .purple {
+            color: purple;
+        }
+
+        .italic {
+            /* Norint paversti tekstą į šoną */
+            font-style: italic;
+        }
+
+        /* Norint parinkti elementą turintį visas nurodytas klases */
+        .purple.italic {
+            /* Norint paryškinti tekstą */
+            font-weight: bold;
+        }
+
+        .background {
+            background: black;
+        }
+
+        .purple.italic.background {
+            color: white;
+        }
+
+        .box .purple {
+            font-weight: bold;
+        }
+
+        /* id atributo selektorius */
+        #backgroundBlack {
+            background: black;
+        }
+
+        /* Elemento selektorius */
+        ul {
+            background: black;
+            color: white;
+        }
+
+        /* Elemento su klase selektorius */
+        ul.italic {
+            font-weight: bold;
+        }
+
+        /* Elemento su id atributu selektorius */
+        ul#backgroundRed {
+            background: red;
+        }
+        
+        /* Tiesioginio palikuonio selektorius */
+        .secondBox > p {
+            background: blue;
+            color: white;
+        }
+
+        /* Norint pasiekti sektantį elementą už turinčio id atributą #backgroundRed */
+        #backgroundRed + ol {
+            background: blue;
+            color: white;
+        }
+
+        #backgroundRed + ol + ol + ol {
+            background: blue;
+            color: white;
+        }
+
+        /* Filtravimas pagal atributo pavadinimą */
+        [atributas] {
+            color: red;
+        }
+
+        /* Filtravimas pagal atributo reikšmę */
+
+        [atributas="juoda"] {
+            background: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Klasės</h1>
+    <!-- Klasės atributas -->
+    <p class="purple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cum voluptatem temporibus repellendus, placeat molestias?</p>
+    <p class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ipsam mollitia quae provident vel dignissimos, a voluptates harum dolor nihil.</p>
+    <p id="backgroundBlack" class="purple italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae accusantium vel omnis et iusto sed culpa atque, illum dolorem quis?</p>
+    <p class="purple italic background">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <h2>Nuotraukos</h2>
+    <!-- Nuotraukos deklaravimas -->
+    <img src="1.jpg" width="300">
+    <!-- Sąrašai -->
+    <h2>Sąrašai</h2>
+    <!-- ul elementas naudojamas dažniausiai ir bene kiekviename puslapyje sutinkamas navigacijoje -->
+    <!-- unordered list -->
+    <ul class="italic">
+        <!-- list item -->
+       <li>Pirmas</li> 
+       <li>Antras</li> 
+       <li>Trečias</li> 
+    </ul>
+    <ul id="backgroundRed">
+        <!-- list item -->
+       <li>Pirmas</li> 
+       <li>Antras</li> 
+       <li>Trečias</li> 
+    </ul>
+    <!-- ordered list -->
+    <ol>
+        <!-- list item -->
+        <li>Pirmas</li>
+        <li>Antras</li>
+        <li>Trečias</li>
+    </ol>
+    <ol>
+        <!-- list item -->
+        <li>Pirmas</li>
+        <li>Antras</li>
+        <li>Trečias</li>
+    </ol>
+    <ol>
+        <!-- list item -->
+        <li>Pirmas</li>
+        <li>Antras</li>
+        <li>Trečias</li>
+    </ol>
+    <h2>Nuorodos</h2>
+    <!-- a - anchor -->
+    <!-- href atributas nurodo kur turėtų būti nukreipiamas vartotojas -->
+    <a href="https://google.com">Google</a>
+    <!-- target atributas nurodo kaip turėtų būti atidaromas tinklapis -->
+    <!-- _blank nurodo, jog nuroda bus atidaroma naujame tab'e -->
+    <a href="https://15min.lt" target="_blank">15min</a>
+    
+    <h2>Dukteriniai elementai</h2>
+    <div class="box">
+        <p class="purple">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, maxime?</p>
+    </div>
+
+    <h2>Tiesioginio palikuonio parinkimas</h2>
+    <div class="secondBox">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, explicabo.</p>
+        <div class="innerBox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nostrum.</p>
+            <div class="innerBox">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nostrum.</p>
+                <div class="innerBox">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nostrum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Filtravimas pagal atributus</h2>
+    <p atributas>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, repellendus.</p>
+    <p atributas="juoda">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, repellendus.</p>
+</body>
+</html>
