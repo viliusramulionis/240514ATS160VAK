@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://static.skelbiu.lt/static/vendor/font-awesome/css/font-awesome.css?v=SK-SK-JOB1-13279-45180ffb988f0a24b994a07edf38ec2a">
+    <link rel="stylesheet" type="text/css" href="https://static.skelbiu.lt/static/css/common.css?v=SK-SK-JOB1-13279-45180ffb988f0a24b994a07edf38ec2a">
+    <link rel="stylesheet" type="text/css" href="https://static.skelbiu.lt/static/css/block/saved-searches-desktop-home.css?v=SK-SK-JOB1-13279-45180ffb988f0a24b994a07edf38ec2a">
+    <link rel="stylesheet" type="text/css" href="https://static.skelbiu.lt/static/css/block/confirm-dialog.css?v=SK-SK-JOB1-13279-45180ffb988f0a24b994a07edf38ec2a">
+    <link href="https://static.skelbiu.lt/static/dist/desktop/_layout/index.css?v=SK-SK-JOB1-13279-45180ffb988f0a24b994a07edf38ec2a" rel="stylesheet">
+    <link href="https://static.skelbiu.lt/static/dist/desktop/categories/index.css?v=SK-SK-JOB1-13279-45180ffb988f0a24b994a07edf38ec2a" rel="stylesheet">
+    <style>
+        /* Stilius pildomas šioje pozicijoje */
+        
+    </style>
+</head>
+
+<body>
+    <div id="body">
+        <div id="layout">
+            <div id="body-container">
+
+                <div id="logoAndMenu">
+                    <a href="/" id="logoarea"><img
+                            src="https://static.skelbiu.lt/static/images/svg/logotipas_ua.svg?v=4"
+                            alt="Skelbimai, parduodu - Skelbiu.lt"
+                            style="width: 192px; height: 65px; margin: 0 10px 0 5px;"></a>
+
+                    <a id="siteSlogan" href="/" class="userMenu">
+                        Lankomiausias<br>skelbimų portalas </a>
+
+                    <div id="topMenuNav">
+                        <ul id="langBar">
+                            <li><a id="ru_lang" href="https://ru.skelbiu.lt/">RU</a></li>
+                        </ul>
+
+                        <ul id="mainTopMenu">
+                            <li id="users-shipments" class="userMenu">
+                                <a href="/siuntos/pastomatai" rel="nofollow">
+                                    <span class="shipment-icon"></span> Siuntos </a>
+                            </li>
+
+
+                            <li id="rememberMenu" class="userMenu">
+                                <a href="/user/remembered-ads" rel="nofollow">
+                                    <i class="heart"></i> <span class="js-remembered-count">0</span>
+
+                                    <div class="menuTip">
+                                        <span>Įsiminti skelbimai</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="watchHistory" class="userMenu">
+                                <a href="/perziureti-skelbimai/" rel="nofollow">
+                                    <i class="icon"></i> <span id="watched-history-count">0</span>
+
+                                    <div class="menuTip">
+                                        <span>Peržiūrėti skelbimai</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li id="savedSearchesMenu" class="userMenu">
+                                <a href="/issaugotos-paieskos" rel="nofollow">
+                                    Paieškos </a>
+                            </li>
+
+                            <li><a href="/users/signin" rel="nofollow">Prisijungti</a></li>
+                            <li><a href="/vartotojo-registracija" rel="nofollow">Registruotis</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form action="/skelbimai/" id="searchForm" name="searchForm" data-url="">
+                    <input type="hidden" name="autocompleted" value="1">
+
+                    <div class="auto-suggester-background"></div>
+                    <div id="mainSearchArea">
+                        <div id="mainSearchAreaControls">
+                            <div id="addNewItemArea">
+                                <a href="/naujas-skelbimas/" id="addNewItem"><i>+</i> Įdėkite skelbimą</a>
+                            </div>
+                            <input type="text" name="keywords" placeholder="Ieškok tarp 948 602 skelbimų" value=""
+                                id="searchKeyword" maxlength="50" autocomplete="off">
+                            <button name="submit_bn" type="submit" id="searchButton"><i
+                                    class="fa fa-search"></i></button>
+                            <div id="selectboxCategory">
+                                <ul>
+                                    <li data-value="0"><a class="search_select_category" href="/skelbimai/"
+                                            data-category="0" data-title="Visi skelbimai">Visi skelbimai</a></li>
+                                    <li data-value="1"><a class="search_select_category" data-category="1"
+                                            data-title="Transportas" href="/skelbimai/transportas/">Transportas</a></li>
+                                    <li data-value="2"><a class="search_select_category" data-category="2"
+                                            data-title="Nekilnojamasis turtas"
+                                            href="/skelbimai/nekilnojamasis-turtas/">Nekilnojamasis turtas</a></li>
+                                    <li data-value="3"><a class="search_select_category" data-category="3"
+                                            data-title="Darbas, paslaugos" href="/skelbimai/paslaugos-darbas/">Darbas,
+                                            paslaugos</a></li>
+                                    <li data-value="4"><a class="search_select_category" data-category="4"
+                                            data-title="Kompiuterija" href="/skelbimai/kompiuterija/">Kompiuterija</a>
+                                    </li>
+                                    <li data-value="5"><a class="search_select_category" data-category="5"
+                                            data-title="Technika" href="/skelbimai/technika/">Technika</a></li>
+                                    <li data-value="6"><a class="search_select_category" data-category="6"
+                                            data-title="Komunikacijos"
+                                            href="/skelbimai/komunikacijos/">Komunikacijos</a></li>
+                                    <li data-value="7"><a class="search_select_category" data-category="7"
+                                            data-title="Pramogos" href="/skelbimai/pramogos/">Pramogos</a></li>
+                                    <li data-value="8"><a class="search_select_category" data-category="8"
+                                            data-title="Buitis" href="/skelbimai/buitis/">Buitis</a></li>
+                                    <li data-value="4353"><a class="search_select_category" data-category="4353"
+                                            data-title="Drabužiai, avalynė"
+                                            href="/skelbimai/drabuziai-avalyne/">Drabužiai, avalynė</a></li>
+                                    <li data-value="4354"><a class="search_select_category" data-category="4354"
+                                            data-title="Auginantiems vaikus"
+                                            href="/skelbimai/auginantiems-vaikus/">Auginantiems vaikus</a></li>
+                                    <li data-value="36069"><a class="search_select_category" data-category="36069"
+                                            data-title="Ukrainai | Для українців"
+                                            href="/skelbimai/pagalba-ukrainai/">Ukrainai | Для українців</a></li>
+                                </ul>
+                                <span>Visi skelbimai</span> <i class="fa fa-caret-down"></i>
+                            </div>
+                            <div id="selectboxCities"><span>Visi miestai</span><i class="fa fa-caret-down"></i></div>
+                        </div>
+                        <div class="auto-suggester">
+                            <div class="hint-block">
+                                <div class="title">Kategorijoje:</div>
+                                <div class="hint"></div>
+                                <div class="clear-button"></div>
+                            </div>
+                            <div class="loading">Įkeliama ...</div>
+                            <div class="history-block"></div>
+                            <div class="suggestions-block"></div>
+                        </div>
+                    </div>
+
+
+                    <input type="hidden" name="cities" value="0" id="searchInCities">
+                    <input type="hidden" name="distance" value="0" id="searchDistance">
+                    <input type="hidden" name="mainCity" value="0" id="searchMainCity">
+                    <input type="hidden" name="search" value="1">
+                    <input type="hidden" name="category_id" value="0" id="categoryField">
+                    <input type="hidden" name="user_type" value="0" id="user_type">
+                    <input type="hidden" name="ad_since_min" value="0" id="ad_since_min">
+                    <input type="hidden" name="ad_since_max" value="0" id="ad_since_max">
+                    <input type="hidden" name="visited_page" value="" id="visited_page">
+                    <input type="hidden" name="detailsSearch" value="0" id="detailsSearchOn">
+                </form>
+                <div id="container">
+                    <div id="contentArea">
+
+
+
+
+
+
+
+
+                        <div id="infobar"><a href="/siuntos/pastomatai">
+                                <div class="shipment-infobar-container">
+                                    <div class="skelbiu-shipment-logo">
+                                        <img src="https://static.skelbiu.lt/static/images/shipment/Skelbiu-siuntos_logo.svg"
+                                            alt="Skelbiu.lt shipment logo">
+                                    </div>
+
+                                    <div class="text1">Saugus būdas prekes siųsti ir gauti be kontakto!</div>
+                                    <div class="send-shipment-button">Siųsti siuntą</div>
+                                    <div class="text2">Vos nuo 1,94 €</div>
+
+                                    <div class="provider-logo omniva-logo"><img
+                                            src="https://static.skelbiu.lt/static/images/shipment/Omniva_lockup_horizontal_orange.svg"
+                                            alt="Omniva logo"></div>
+                                    <div class="provider-logo lpexpress-logo"><img
+                                            src="https://static.skelbiu.lt/static/images/shipment/lp_logo.png"
+                                            alt="Lp Express logo"></div>
+                                    <div class="provider-logo dpd-logo"><img
+                                            src="https://static.skelbiu.lt/static/images/shipment/dpd_info.svg"
+                                            alt="DPD logo"></div>
+
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </a></div>
+                        <div id="main-categories-container">
+                            <div class="categBlock">
+                                <h2 id="transport"><a href="https://www.skelbiu.lt/skelbimai/transportas/"
+                                        class="titleHeader">Transportas</a></h2>
+                                <ul class="categlist">
+                                    <li id="icon-31"><a
+                                            href="/skelbimai/transportas/automobiliai/">Automobiliai</a>&nbsp;(41247)
+                                    </li>
+                                    <li id="icon-32"><a href="/skelbimai/transportas/moto/">Moto</a>&nbsp;(9013)</li>
+                                    <li id="icon-34"><a
+                                            href="/skelbimai/transportas/autobusai/">(Mikro)autobusai</a>&nbsp;(2970)
+                                    </li>
+                                    <li id="icon-33"><a href="/skelbimai/transportas/dviraciai/">Dviračiai,
+                                            paspirtukai</a>&nbsp;(21767)</li>
+                                    <li id="icon-36"><a href="/skelbimai/transportas/krovininiai-automobiliai/">Spec.
+                                            transportas</a>&nbsp;(11299)</li>
+                                    <li id="icon-37"><a href="/skelbimai/transportas/vandens-transportas/">Vandens
+                                            transportas</a>&nbsp;(1787)</li>
+                                    <li id="icon-35"><a href="/skelbimai/transportas/zemes-ukio-technika/">Žemės ūkio
+                                            technika</a>&nbsp;(7518)</li>
+                                    <li id="icon-38"><a href="/skelbimai/transportas/dalys-aksesuarai/">Dalys,
+                                            aksesuarai</a>&nbsp;(241606)</li>
+                                    <li id="icon-39"><a
+                                            href="/skelbimai/transportas/paslaugos/">Paslaugos</a>&nbsp;(4167)</li>
+                                    <li id="icon-18"><a href="/skelbimai/transportas/kita/">Kita</a>&nbsp;(134)</li>
+                                </ul>
+                            </div>
+                            <div class="betweenCateg"></div>
+
+                            <div class="categBlock">
+                                <h2 id="realEstate"><a href="https://www.skelbiu.lt/skelbimai/nekilnojamasis-turtas/"
+                                        class="titleHeader">Nekilnojamasis turtas</a></h2>
+                                <ul class="categlist">
+                                    <li id="icon-41"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/butai/">Butai</a>&nbsp;(10432)</li>
+                                    <li id="icon-42"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/namai/">Namai</a>&nbsp;(8510)</li>
+                                    <li id="icon-45"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/patalpos/">Patalpos</a>&nbsp;(1843)
+                                    </li>
+                                    <li id="icon-43"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/sklypai/">Sklypai</a>&nbsp;(8765)
+                                    </li>
+                                    <li id="icon-44"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/sodybos/">Sodybos</a>&nbsp;(1077)
+                                    </li>
+                                    <li id="icon-46"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/garazai/">Garažai</a>&nbsp;(839)</li>
+                                    <li id="icon-74"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/nuoma/">Nuoma</a>&nbsp;(8089)</li>
+                                    <li id="icon-39280"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/moduliniai-namai/">Moduliniai
+                                            namai</a>&nbsp;(182)</li>
+                                    <li id="icon-75"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/medziagos-iranga/">Medžiagos,
+                                            įranga</a>&nbsp;(31998)</li>
+                                    <li id="icon-1580"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/statybos-paslaugos/">Statybos
+                                            paslaugos</a>&nbsp;(3729)</li>
+                                    <li id="icon-15"><a
+                                            href="/skelbimai/nekilnojamasis-turtas/kita/">Kita</a>&nbsp;(405)</li>
+                                </ul>
+                            </div>
+
+                            <div class="betweenCateg"></div>
+                            <div class="categBlock">
+                                <h2 id="services"><a href="https://www.skelbiu.lt/skelbimai/paslaugos-darbas/"
+                                        class="titleHeader">Darbas, paslaugos</a></h2>
+                                <ul class="categlist">
+                                    <li id="icon-53"><a href="/skelbimai/paslaugos-darbas/siulo-darba/">Siūlo
+                                            darbą</a>&nbsp;(12057)</li>
+                                    <li id="icon-614"><a href="/skelbimai/paslaugos-darbas/iesko-darbo/">Ieško
+                                            darbo</a>&nbsp;(1434)</li>
+                                    <li id="icon-1564"><a href="/skelbimai/paslaugos-darbas/biuro-paslaugos/">Biuro
+                                            paslaugos</a>&nbsp;(200)</li>
+                                    <li id="icon-4202"><a
+                                            href="/skelbimai/paslaugos-darbas/grozio-sveikatos-paslaugos/">Grožio,
+                                            sveikatos paslaugos</a>&nbsp;(313)</li>
+                                    <li id="icon-57"><a href="/skelbimai/paslaugos-darbas/kursai-mokymai/">Kursai,
+                                            mokymai</a>&nbsp;(337)</li>
+                                    <li id="icon-615"><a href="/skelbimai/paslaugos-darbas/renginiu-paslaugos/">Renginių
+                                            paslaugos</a>&nbsp;(400)</li>
+                                    <li id="icon-54"><a href="/skelbimai/paslaugos-darbas/verslo-paslaugos/">Verslo
+                                            paslaugos</a>&nbsp;(422)</li>
+                                    <li id="icon-377"><a href="/skelbimai/paslaugos-darbas/web-sprendimai/">Web
+                                            sprendimai, svetainės</a>&nbsp;(38)</li>
+                                    <li id="icon-16"><a href="/skelbimai/paslaugos-darbas/kita/">Kita</a>&nbsp;(727)
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="betweenCateg"></div>
+                            <div class="categBlock">
+                                <h2 id="life">
+                                    <a href="https://www.skelbiu.lt/skelbimai/buitis/" class="titleHeader">Buitis</a>
+                                </h2>
+                                <ul class="categlist">
+                                    <li id="icon-25"><a href="/skelbimai/buitis/baldai-interjeras/">Baldai,
+                                            interjeras</a>&nbsp;(62059)</li>
+                                    <li id="icon-67"><a href="/skelbimai/buitis/flora-fauna/">Flora,
+                                            fauna</a>&nbsp;(15228)</li>
+                                    <li id="icon-389"><a href="/skelbimai/buitis/grozis-sveikata/">Grožis,
+                                            sveikata</a>&nbsp;(8586)</li>
+                                    <li id="icon-169"><a
+                                            href="/skelbimai/buitis/kolekcionavimas/">Kolekcionavimas</a>&nbsp;(85330)
+                                    </li>
+                                    <li id="icon-208"><a href="/skelbimai/buitis/maistas-gerimai/">Maistas,
+                                            gėrimai</a>&nbsp;(1320)</li>
+                                    <li id="icon-1395"><a href="/skelbimai/buitis/namu-apyvokos-reikmenys/">Namų
+                                            apyvokos reikmenys</a>&nbsp;(21261)</li>
+                                    <li id="icon-1385"><a
+                                            href="/skelbimai/buitis/antikvariatas/">Antikvariatas</a>&nbsp;(30448)</li>
+                                    <li id="icon-209"><a href="/skelbimai/buitis/dovanojama-radiniai/">Dovanojama,
+                                            radiniai</a>&nbsp;(1346)</li>
+                                    <li id="icon-11320"><a href="/skelbimai/buitis/kietas-skystas-kuras/">Kietas,
+                                            skystas kuras</a>&nbsp;(1905)</li>
+                                    <li id="icon-11"><a href="/skelbimai/buitis/kita/">Kita</a>&nbsp;(489)</li>
+                                </ul>
+                            </div>
+                            <div class="LineHeight20"></div>
+                            <div>
+                                <div class="categBlock">
+                                    <h2 id="computers"><a href="https://www.skelbiu.lt/skelbimai/kompiuterija/"
+                                            class="titleHeader">Kompiuterija</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-79"><a
+                                                href="/skelbimai/kompiuterija/kompiuteriai/">Kompiuteriai</a>&nbsp;(13237)
+                                        </li>
+                                        <li id="icon-1114"><a
+                                                href="/skelbimai/kompiuterija/isoriniai-irenginiai/">Išoriniai
+                                                įrenginiai</a>&nbsp;(6166)</li>
+                                        <li id="icon-1132"><a
+                                                href="/skelbimai/kompiuterija/kompiuteriu-komponentai/">Kompiuterių
+                                                komponentai</a>&nbsp;(5482)</li>
+                                        <li id="icon-1155"><a
+                                                href="/skelbimai/kompiuterija/priedai-aksesuarai/">Priedai,
+                                                aksesuarai</a>&nbsp;(2324)</li>
+                                        <li id="icon-84"><a
+                                                href="/skelbimai/kompiuterija/programine-iranga-zaidimai/">Programinė
+                                                įranga, žaidimai</a>&nbsp;(2598)</li>
+                                        <li id="icon-275"><a href="/skelbimai/kompiuterija/tinklo-iranga/">Tinklo
+                                                įranga</a>&nbsp;(1876)</li>
+                                        <li id="icon-265"><a
+                                                href="/skelbimai/kompiuterija/prieziura-remontas/">Paslaugos,
+                                                remontas</a>&nbsp;(121)</li>
+                                        <li id="icon-13"><a href="/skelbimai/kompiuterija/kita/">Kita</a>&nbsp;(185)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="betweenCateg"></div>
+                                <div class="categBlock">
+                                    <h2 id="comunication"><a href="https://www.skelbiu.lt/skelbimai/komunikacijos/"
+                                            class="titleHeader">Komunikacijos</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-63"><a href="/skelbimai/komunikacijos/mobilus-telefonai/">Mobilieji
+                                                telefonai</a>&nbsp;(9871)</li>
+                                        <li id="icon-159"><a href="/skelbimai/komunikacijos/radio-gps-iranga/">Radijo,
+                                                GPS įranga</a>&nbsp;(1174)</li>
+                                        <li id="icon-64"><a href="/skelbimai/komunikacijos/telefonai-faksai/">Telefonai,
+                                                faksai</a>&nbsp;(310)</li>
+                                        <li id="icon-65"><a href="/skelbimai/komunikacijos/dalys-priedai/">Dalys,
+                                                priedai</a>&nbsp;(5092)</li>
+                                        <li id="icon-86"><a href="/skelbimai/komunikacijos/remontas/">Paslaugos,
+                                                remontas</a>&nbsp;(68)</li>
+                                        <li id="icon-14"><a href="/skelbimai/komunikacijos/kita/">Kita</a>&nbsp;(420)
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="betweenCateg"></div>
+                                <div class="categBlock">
+                                    <h2 id="technology"><a href="https://www.skelbiu.lt/skelbimai/technika/"
+                                            class="titleHeader">Technika</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-58"><a href="/skelbimai/technika/audio/">Audio</a>&nbsp;(12155)
+                                        </li>
+                                        <li id="icon-59"><a href="/skelbimai/technika/video/">Video</a>&nbsp;(6198)</li>
+                                        <li id="icon-61"><a href="/skelbimai/technika/buitine-technika/">Buitinė
+                                                technika</a>&nbsp;(18960)</li>
+                                        <li id="icon-60"><a href="/skelbimai/technika/foto-optika/">Foto,
+                                                optika</a>&nbsp;(5792)</li>
+                                        <li id="icon-62"><a href="/skelbimai/technika/biuro-technika/">Biuro, prekybinė
+                                                technika</a>&nbsp;(789)</li>
+                                        <li id="icon-850"><a href="/skelbimai/technika/sodui-darzui-miskui/">Sodui,
+                                                daržui, miškui</a>&nbsp;(9861)</li>
+                                        <li id="icon-1592"><a href="/skelbimai/technika/pramonine-technika/">Pramoninė
+                                                technika</a>&nbsp;(11239)</li>
+                                        <li id="icon-66"><a href="/skelbimai/technika/remonto-paslaugos/">Paslaugos,
+                                                remontas</a>&nbsp;(472)</li>
+                                        <li id="icon-12"><a href="/skelbimai/technika/kita/">Kita</a>&nbsp;(4571)</li>
+                                    </ul>
+                                </div>
+                                <div class="betweenCateg"></div>
+                                <div class="categBlock">
+                                    <h2 id="help_ukraine"><a href="https://www.skelbiu.lt/skelbimai/pagalba-ukrainai/"
+                                            class="titleHeader">Ukrainai | Для українців</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-36073"><a
+                                                href="/skelbimai/nekilnojamasis-turtas/nuoma/ilgalaike/?are_ukrainians_welcome=1&amp;search=1">Apgyvendinimas</a>&nbsp;(99)
+                                        </li>
+                                        <li id="icon-36071"><a
+                                                href="/skelbimai/?are_ukrainians_welcome=1&amp;search=1&amp;category_id=53">Darbas</a>&nbsp;(1582)
+                                        </li>
+                                        <li id="icon-36077"><a
+                                                href="/skelbimai/pagalba-ukrainai/vaikams/">Vaikams</a>&nbsp;(12)</li>
+                                        <li id="icon-36079"><a
+                                                href="/skelbimai/pagalba-ukrainai/elektronika-technika/">Elektronika,
+                                                technika</a>&nbsp;(7)</li>
+                                        <li id="icon-36081"><a
+                                                href="/skelbimai/pagalba-ukrainai/baldai-namu-apyvoka/">Baldai, namų
+                                                apyvoka</a>&nbsp;(4)</li>
+                                        <li id="icon-36083"><a
+                                                href="/skelbimai/pagalba-ukrainai/maistas-gerimai/">Maistas,
+                                                gėrimai</a>&nbsp;(1)</li>
+                                        <li id="icon-36085"><a
+                                                href="/skelbimai/pagalba-ukrainai/drabuziai-higiena/">Drabužiai,
+                                                higiena</a>&nbsp;(5)</li>
+                                        <li id="icon-36075"><a
+                                                href="/skelbimai/pagalba-ukrainai/augintiniams/">Augintiniams</a>&nbsp;(4)
+                                        </li>
+                                        <li id="icon-36087"><a
+                                                href="/skelbimai/pagalba-ukrainai/kita/">Kita</a>&nbsp;(9)</li>
+                                    </ul>
+                                </div>
+                                <div class="LineHeight20"></div>
+                                <div class="categBlock">
+                                    <h2 id="entertainment"><a href="https://www.skelbiu.lt/skelbimai/pramogos/"
+                                            class="titleHeader">Pramogos</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-51"><a href="/skelbimai/pramogos/knygos-kinas/">Knygos,
+                                                kinas</a>&nbsp;(26221)</li>
+                                        <li id="icon-48"><a href="/skelbimai/pramogos/sportas-zaidimai/">Sportas,
+                                                žaidimai</a>&nbsp;(16519)</li>
+                                        <li id="icon-47"><a
+                                                href="/skelbimai/pramogos/turizmas/">Turizmas</a>&nbsp;(6206)</li>
+                                        <li id="icon-20"><a href="/skelbimai/pramogos/pazintys/"
+                                                rel="nofollow">Pažintys</a>&nbsp;(262)</li>
+                                        <li id="icon-52"><a href="/skelbimai/pramogos/medziokle-zvejyba/">Medžioklė,
+                                                žvejyba</a>&nbsp;(8091)</li>
+                                        <li id="icon-49"><a href="/skelbimai/pramogos/muzika-instrumentai/">Muzika,
+                                                instrumentai</a>&nbsp;(10921)</li>
+                                        <li id="icon-213"><a href="/skelbimai/pramogos/pakvietimai/">Pakvietimai,
+                                                bilietai</a>&nbsp;(397)</li>
+                                        <li id="icon-4811"><a href="/skelbimai/pramogos/suaugusiems/"
+                                                rel="nofollow">Suaugusiems</a>&nbsp;(445)</li>
+                                        <li id="icon-17"><a href="/skelbimai/pramogos/kita/">Kita</a>&nbsp;(368)</li>
+                                    </ul>
+                                </div>
+                                <div class="betweenCateg"></div>
+                                <div class="categBlock">
+                                    <h2 id="clothes"><a href="https://www.skelbiu.lt/skelbimai/drabuziai-avalyne/"
+                                            class="titleHeader">Drabužiai, avalynė</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-4263"><a
+                                                href="/skelbimai/drabuziai-avalyne/moterims/">Moterims</a>&nbsp;(22095)
+                                        </li>
+                                        <li id="icon-4264"><a
+                                                href="/skelbimai/drabuziai-avalyne/vyrams/">Vyrams</a>&nbsp;(7897)</li>
+                                        <li id="icon-37472"><a
+                                                href="/skelbimai/auginantiems-vaikus/drabuziai-avalyne/drabuziai/">Vaikams</a>&nbsp;(10817)
+                                        </li>
+                                        <li id="icon-188"><a
+                                                href="/skelbimai/drabuziai-avalyne/avalyne/">Avalynė</a>&nbsp;(11620)
+                                        </li>
+                                        <li id="icon-4355"><a href="/skelbimai/drabuziai-avalyne/spec-apranga/">Spec.
+                                                apranga</a>&nbsp;(1439)</li>
+                                        <li id="icon-1301"><a
+                                                href="/skelbimai/drabuziai-avalyne/papuosalai-aksesuarai/">Papuošalai,
+                                                aksesuarai</a>&nbsp;(20459)</li>
+                                        <li id="icon-4356"><a
+                                                href="/skelbimai/drabuziai-avalyne/paslaugos/">Paslaugos</a>&nbsp;(68)
+                                        </li>
+                                        <li id="icon-1493"><a
+                                                href="/skelbimai/drabuziai-avalyne/kita/">Kita</a>&nbsp;(181)</li>
+                                    </ul>
+                                </div>
+                                <div class="betweenCateg"></div>
+                                <div class="categBlock">
+                                    <h2 id="forchildren"><a href="https://www.skelbiu.lt/skelbimai/auginantiems-vaikus/"
+                                            class="titleHeader">Auginantiems vaikus</a></h2>
+                                    <ul class="categlist">
+                                        <li id="icon-415"><a
+                                                href="/skelbimai/auginantiems-vaikus/drabuziai-avalyne/">Drabužiai,
+                                                avalynė</a>&nbsp;
+                                            (15162)</li>
+                                        <li id="icon-399"><a
+                                                href="/skelbimai/auginantiems-vaikus/baldai/">Baldai</a>&nbsp;
+                                            (2475)</li>
+                                        <li id="icon-4357"><a
+                                                href="/skelbimai/auginantiems-vaikus/prieziuros-priemones/">Priežiūros
+                                                priemonės</a>&nbsp;
+                                            (1683)</li>
+                                        <li id="icon-4358"><a
+                                                href="/skelbimai/auginantiems-vaikus/vezimeliai-autokedutes/">Vežimėliai,
+                                                autokėdutės</a>&nbsp;
+                                            (4286)</li>
+                                        <li id="icon-4359"><a
+                                                href="/skelbimai/auginantiems-vaikus/judejimo-priemones/">Judėjimo
+                                                priemonės</a>&nbsp;
+                                            (2389)</li>
+                                        <li id="icon-4360"><a
+                                                href="/skelbimai/auginantiems-vaikus/zaislai-mokyklines-prekes/">Žaislai,
+                                                mokyklinės prekės</a>&nbsp;
+                                            (10855)</li>
+                                        <li id="icon-4244"><a
+                                                href="/skelbimai/auginantiems-vaikus/paslaugos-vaikams/">Paslaugos
+                                                vaikams</a>&nbsp;
+                                            (88)</li>
+                                        <li id="icon-400"><a href="/skelbimai/auginantiems-vaikus/kita/">Kita</a>&nbsp;
+                                            (250)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="newItemsArea">
+                                <h2 id="newItems"><a href="/skelbimai/">Naujausi skelbimai</a></h2>
+                                <div id="listNewItems"><a
+                                        href="/skelbimai/nikon-80-400mm-f4-5-5-6-g-ed-vr-74420490.html"
+                                        style="display: block;" class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979142428/nikon-80-400mm-f4-5-5-6-g-ed-vr.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Nikon 80-400mm F4.5-5.6 G Ed Vr</span><span
+                                            class="newItemsPrice">490 €</span><span class="itemAddedBefore">prieš 52
+                                            sek.</span><span class="itemAddedTime">1715871611</span></a><a
+                                        href="/skelbimai/sausas-davinus-74420470.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979138988/sausas-davinus.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Sausas davinus</span><span class="newItemsPrice">4
+                                            €</span><span class="itemAddedBefore">prieš 54 sek.</span><span
+                                            class="itemAddedTime">1715871609</span></a><a
+                                        href="/skelbimai/parduodu-laiva-meridiana-74420472.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979140624/parduodu-laiva-meridiana.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Parduodu laivą - Meridianą</span><span
+                                            class="newItemsPrice">60 €</span><span class="itemAddedBefore">prieš 1
+                                            min.</span><span class="itemAddedTime">1715871566</span></a><a
+                                        href="/skelbimai/vaikiskas-dviratis-24-pegasus-74420462.html"
+                                        style="display: block;" class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979138996/vaikiskas-dviratis-24-pegasus.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Vaikiškas dviratis 24 Pegasus</span><span
+                                            class="newItemsPrice">30 €</span><span class="itemAddedBefore">prieš 1
+                                            min.</span><span class="itemAddedTime">1715871562</span></a><a
+                                        href="/skelbimai/delonghi-kavos-aparatas-74420466.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979140652/delonghi-kavos-aparatas.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Delonghi Kavos aparatas</span><span
+                                            class="newItemsPrice">30 €</span><span class="itemAddedBefore">prieš 2
+                                            min.</span><span class="itemAddedTime">1715871505</span></a><a
+                                        href="/skelbimai/auksine-sage-roze-5-84gr-74420438.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979139042/auksine-sage-roze-5-84gr.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Auksinė sagė Rožė 5,84gr</span><span
+                                            class="newItemsPrice">290 €</span><span class="itemAddedBefore">prieš 4
+                                            min.</span><span class="itemAddedTime">1715871392</span></a><a
+                                        href="/skelbimai/garso-stiprintuvas-74420234.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979128088/garso-stiprintuvas.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Garso stiprintuvas</span><span
+                                            class="newItemsPrice">35 €</span><span class="itemAddedBefore">prieš 5
+                                            min.</span><span class="itemAddedTime">1715871313</span></a><a
+                                        href="/skelbimai/airpods-pro-2-74420416.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979136100/airpods-pro-2.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Airpods pro 2</span><span class="newItemsPrice">180
+                                            €</span><span class="itemAddedBefore">prieš 6 min.</span><span
+                                            class="itemAddedTime">1715871288</span></a><a
+                                        href="/skelbimai/parduodamas-sodas-dercekliuose-74420390.html"
+                                        style="display: block;" class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979132814/parduodamas-sodas-dercekliuose.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Parduodamas sodas Dercekliuose</span><span
+                                            class="newItemsPrice">20 000 €</span><span class="itemAddedBefore">prieš 7
+                                            min.</span><span class="itemAddedTime">1715871205</span></a><a
+                                        href="/skelbimai/parduodama-naudota-skalbimo-masina-miele-wda-210-c-74420380.html"
+                                        style="display: block;" class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979135886/parduodama-naudota-skalbimo-masina-miele-wda-210-c.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Parduodama naudota skalbimo mašina Miele Wda 210
+                                            C</span><span class="newItemsPrice">250 €</span><span
+                                            class="itemAddedBefore">prieš 8 min.</span><span
+                                            class="itemAddedTime">1715871181</span></a><a
+                                        href="/skelbimai/lzxd1s-d1s-led-lempuciu-pora-74420334.html"
+                                        style="display: block;" class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979133056/lzxd1s-d1s-led-lempuciu-pora.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Lzxd1s D1s LED lempučių pora</span><span
+                                            class="newItemsPrice">55 €</span><span class="itemAddedBefore">prieš 8
+                                            min.</span><span class="itemAddedTime">1715871163</span></a><a
+                                        href="/skelbimai/realme-10-pro-74420338.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979134166/realme-10-pro.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Realme 10 pro</span><span class="newItemsPrice">150
+                                            €</span><span class="itemAddedBefore">prieš 10 min.</span><span
+                                            class="itemAddedTime">1715871047</span></a><a
+                                        href="/skelbimai/dibea-valymo-irenginys-74420336.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979133094/dibea-valymo-irenginys.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">"Dibea" valymo įrenginys</span><span
+                                            class="newItemsPrice">145 €</span><span class="itemAddedBefore">prieš 10
+                                            min.</span><span class="itemAddedTime">1715871005</span></a><a
+                                        href="/skelbimai/toyota-prius-r17-originalus-ratlankiai-ratlankiai-74420328.html"
+                                        style="display: block;" class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979129760/toyota-prius-r17-originalus-ratlankiai-ratlankiai.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Toyota Prius R17 originalus ratlankiai
+                                            ratlankiai</span><span class="newItemsPrice">75 €</span><span
+                                            class="itemAddedBefore">prieš 11 min.</span><span
+                                            class="itemAddedTime">1715870980</span></a><a
+                                        href="/skelbimai/suns-buda-atiduodu-74420322.html" style="display: block;"
+                                        class="newItem"><img
+                                            src="https://skelbiu-img.dgn.lt/1_21_3979134142/suns-buda-atiduodu.jpg"
+                                            width="72" height="54" style="border: none;"><span
+                                            class="newItemsTitle">Suns buda atiduodu</span><span
+                                            class="newItemsPrice"></span><span class="itemAddedBefore">prieš 12
+                                            min.</span><span class="itemAddedTime">1715870913</span></a>
+                                    <div style="height: 8px;"></div>
+                                </div>
+                            </div>
+                            <div class="LineHeight1" style="margin: 0 0 20px 0;"></div>
+                        </div>
+
+
+                        <script type="application/ld+json">
+                {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "https://www.skelbiu.lt/",
+                "logo": "https://static.skelbiu.lt/static/images/svg/logotipas_ua.svg?v=4",
+                "email": "info@skelbiu.lt",
+                "telephone": "+370 5 219 0065",
+                "faxNumber": "(8-5) 21 99994",
+                "name": "Skelbiu.lt",
+                "address": "Saltoniškių g. 9B, 08105 Vilnius"
+                }
+            </script>
+
+                    </div>
+                    <div class="LineHeight20"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <footer>
+                <div class="skelbiu-content">
+                    <div class="contacts-block">
+                        <div class="skelbiu-help">Skelbiu.lt pagalba: <span>+370 680 55000</span></div>
+                        <div class="working-time">Darbo laikas: I-V 08:20 - 17:00, VI, VII 08:20 - 16:00</div>
+                    </div>
+
+                    <div class="links-block">
+                        <a href="/duk.html" class="skelbiu-link duk">D.U.K.</a>
+                        <a href="/naudojimo-taisykles.html" class="skelbiu-link terms">Naudojimo taisyklės</a>
+                        <a href="/privatumo-politika.html" class="skelbiu-link privacy">Privatumo politika</a>
+                        <a href="#" id="ot-sdk-btn" class="skelbiu-link cookies ot-sdk-show-settings lt">Slapuku
+                            nustatymai</a>
+                        <a href="/kontaktai.html" class="skelbiu-link contacts">Kontaktai</a>
+
+                        <a href="/sitemap.html" class="skelbiu-link structure">Svetainės struktūra</a>
+                    </div>
+                </div>
+
+                <div class="bcg-content">
+                    <div class="bcg-block">
+                        <div class="bcg-logo"><img src="https://static.skelbiu.lt/static/images/svg/BCG.svg"
+                                alt="BCG Logo"></div>
+                        <div class="bcg-projects">
+                            <a href="https://www.skelbiu.lt" class="bcg-project" target="_blank"
+                                title="Skelbimai: lankomiausias Lietuvoje pardavimo, nuomos ir kitų skelbimų portalas">Skelbiu.lt</a>
+                            <a href="https://www.cvbankas.lt" class="bcg-project" target="_blank"
+                                title="Darbo skelbimai">CVbankas.lt</a>
+                            <a href="https://www.auto24.ee" class="bcg-project" target="_blank"
+                                title="Uued ja kasutatud sõidukid">Auto24.ee</a>
+                            <a href="https://www.kuldnebors.ee" class="bcg-project" target="_blank"
+                                title="Töö ja koolitus, sõidukid, autod, kinnisvara ja muud kuulutused">KuldneBörs.ee</a>
+                            <a href="https://www.getapro.lv" class="bcg-project" target="_blank"
+                                title="Ērts online-serviss, lai meklētu pārbaudītus speciālistus jebkuriem sadzīves un profesionāliem pakalpojuma veidiem">Getapro.lv</a>
+                            <a href="https://www.autoplius.lt" class="bcg-project" target="_blank"
+                                title="Automobilių skelbimai, automobiliai ir motociklai kiekvienam">Autoplius.lt</a>
+                            <a href="https://www.paslaugos.lt" class="bcg-project" target="_blank"
+                                title="Paslaugos: Įmonės, Meistrai, Specialistai, Freelanceriai, Profesionalai">Paslaugos.lt</a>
+                            <a href="https://www.kv.ee" class="bcg-project" target="_blank"
+                                title="Kinnisvara pakkumised - korterid majad maad äripinnad.">KV.ee</a>
+                            <a href="https://www.city24.ee" class="bcg-project" target="_blank"
+                                title="Kinnisvara - korterid majad äripinnad maa ost müük rent üür">City24.ee</a>
+                            <a href="https://www.getapro.ee" class="bcg-project" target="_blank"
+                                title="Mugav veebiteenus usaldusväärsete spetsialistide leidmiseks kõigi majapidamis- ja eriteenuste jaoks">Getapro.ee</a>
+                            <a href="https://www.aruodas.lt" class="bcg-project" target="_blank"
+                                title="Nekilnojamo turto skelbimai">Aruodas.lt</a>
+                            <a href="https://www.kainos.lt" class="bcg-project" target="_blank"
+                                title="Kainų palyginimo portalas">Kainos.lt</a>
+                            <a href="https://www.osta.ee/" class="bcg-project" target="_blank"
+                                title="Oksjonid, e-poed ja Eesti Disain - rohkelt eripakkumisi">Osta.ee</a>
+                            <a href="https://www.city24.lv" class="bcg-project" target="_blank"
+                                title="Nekustamo īpašumu portāls – dzīvokļi, mājas, zemes, komercplatības- pārdod un izīrē">City24.lv</a>
+                        </div>
+                    </div>
+                    <div class="copyrights">2003 - 2024 © UAB „Diginet LTU“</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
