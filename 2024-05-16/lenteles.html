@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenteles</title>
+    <style>
+        tfoot td {
+            color: blue;
+        }
+
+        tbody td {
+            color: red;
+        }
+
+        tbody tr:nth-child(2) td:nth-child(1) {
+            color: purple;
+        } 
+
+        td table td:first-child {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- table - lentelė -->
+    <table border="1">
+        <thead>
+            <tr>
+                <!-- table heading -->
+                <th>H</th>
+                <th>H</th>
+                <th>H</th>
+                <th>H</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- tr - table row  (eilutė) -->
+            <tr>
+                <!-- td - table data -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <!-- td - table data -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <!-- td - table data -->
+                <td>1</td>
+                <td>
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <!-- td - table data -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+                <td>F</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

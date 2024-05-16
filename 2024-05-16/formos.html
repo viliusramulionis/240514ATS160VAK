@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formos</title>
+    <style>
+        input {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Įveskite savo vardą</label>
+            <input type="text" name="name" required>
+        </div>
+        <div>
+            <label>Įveskite el. pašto adresą</label>
+            <!-- Input elementas skirtas vartotojo duomenų įvedimui -->
+            <!-- Atributas type nurodo laukelio tipą -->
+            <input type="email" name="email" placeholder="vardenis@gmail.com" required>
+        </div>
+        <div>
+            <input type="checkbox" name="agreement">
+            Sutinku su paslaugų salygomis
+        </div>
+        <div>
+            <input type="radio" name="pasirinkimas"> Pirmas
+        </div>
+        <div>
+            <input type="radio" name="pasirinkimas"> Antras
+        </div>
+        <div>
+            <input type="radio" name="pasirinkimas"> Trečias
+        </div>
+        <!-- Pasirinkimo elementas -->
+        <div>
+            <select name="select">
+                <option value="1">Pirmas</option>
+                <option value="2">Antras</option>
+                <option value="3">Trečias</option>
+            </select>
+        </div>
+        <!-- Duomenų perdavimo iniciavimas -->
+        <button>Siųsti</button>
+    </form>
+</body>
+</html>
