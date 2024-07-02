@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="PositiveRegistrationTest">
+        <classes>
+            <class name="FirstTestCase">
+                <parameter name="vardas" value="Brad" />
+                <parameter name="pavarde" value="Pitt" />
+            </class>
+            <class name="SecondTestCase" />
+        </classes>
+    </test>
+    <test name="NegativeRegistrationTest">
+        <classes>
+            <class name="FirstTestCase">
+                <parameter name="vardas" value="Anglina" />
+                <parameter name="pavarde" value="Joalie" />
+            </class>
+        </classes>
+    </test>
+</suite>
