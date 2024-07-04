@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="username" value="helloworld"></parameter>
+    <parameter name="password" value="123456"></parameter>
+    <test name="First Test">
+        <classes>
+            <class name="First">
+                <parameter name="username" value="bluesky"></parameter>
+                <parameter name="password" value="greenwater"></parameter>
+            </class>
+        </classes>
+    </test>
+</suite>

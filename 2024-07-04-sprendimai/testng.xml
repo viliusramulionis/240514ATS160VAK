@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="NegativeRegisterTestWrongUserName" enabled="false">
+        <classes>
+            <class name="Register">
+                <parameter name="username" value="v"></parameter>
+                <parameter name="email" value="verygoodusername@gmail.com"></parameter>
+                <parameter name="password" value="123456"></parameter>
+                <parameter name="positive" value="false"></parameter>
+            </class>
+        </classes>
+    </test>
+    <test name="NegativeRegisterTestWrongPassword" enabled="false">
+        <classes>
+            <class name="Register">
+                <parameter name="username" value="VeryGoodUser"></parameter>
+                <parameter name="email" value="verygoodusernamegmail.com"></parameter>
+                <parameter name="password" value="123456"></parameter>
+                <parameter name="positive" value="false"></parameter>
+            </class>
+        </classes>
+    </test>
+    <test name="PositiveRegisterTest" enabled="true">
+        <classes>
+            <class name="Register">
+                <parameter name="username" value="VeryGoodUser1980"></parameter>
+                <parameter name="email" value="verygooduser1980@gmail.com"></parameter>
+                <parameter name="password" value="123456"></parameter>
+                <parameter name="positive" value="true"></parameter>
+            </class>
+        </classes>
+    </test>
+    <test name="NegativeLoginTest" enabled="false">
+        <classes>
+            <class name="Login">
+                <parameter name="username" value="helloworld2"></parameter>
+                <parameter name="password" value="!>]Y]c"></parameter>
+            </class>
+        </classes>
+    </test>
+    <test name="PositiveLoginTest" enabled="true">
+        <classes>
+            <class name="Login">
+                <parameter name="username" value="VeryGoodUser1980"></parameter>
+                <parameter name="password" value="123456"></parameter>
+            </class>
+        </classes>
+    </test>
+</suite>
