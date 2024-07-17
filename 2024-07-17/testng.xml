@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="ObjectTypeTestChrome" enabled="false">
+        <classes>
+            <class name="Aruodas" />
+        </classes>
+    </test>
+    <test name="ObjectTypeTestFirefox" enabled="false">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="Aruodas" />
+        </classes>
+    </test>
+    <test name="ObjectTypeTestEdge" enabled="false">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="Aruodas" />
+        </classes>
+    </test>
+    <test name="ObjectTypeWithAreaTestChrome" enabled="false">
+<!--        <parameter name="browser" value="firefox" />-->
+        <classes>
+            <class name="Aruodas">
+                <parameter name="areaFrom" value="20"></parameter>
+                <parameter name="areaTo" value="88"></parameter>
+            </class>
+        </classes>
+    </test>
+    <test name="ObjectTypeWithAreaAndPriceTestChrome" enabled="false">
+        <classes>
+            <class name="Aruodas">
+                <parameter name="areaFrom" value="20"></parameter>
+                <parameter name="areaTo" value="88"></parameter>
+                <parameter name="priceFrom" value="0"></parameter>
+                <parameter name="priceTo" value="15000"></parameter>
+                <methods>
+                    <include name="search" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="SearchResultsCounterTestChrome" enabled="true">
+        <classes>
+            <class name="Aruodas">
+                <methods>
+                    <parameter name="type" value="Namai pardavimui" />
+                    <parameter name="state" value="Alytus" />
+                    <parameter name="area" value="Pirmas Alytus" />
+                    <parameter name="objectStatus" value="Įrengtas" />
+                    <parameter name="priceFrom" value="5000" />
+                    <parameter name="priceTo" value="150000" />
+                    <include name="resultsCounter" />
+<!--                    <exclude name=""></exclude>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ExampleOfMethodReturns" enabled="false">
+        <parameter name="browser" value="edge" />
+        <classes>
+            <class name="Skelbiu" />
+        </classes>
+    </test>
+
+</suite>
